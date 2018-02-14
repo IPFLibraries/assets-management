@@ -1,0 +1,25 @@
+{
+	"name": "ipf-libraries/public-assets-manager",
+	"description": "Simple library to make assets management for modules much easier",
+	"type": "library",
+	"require-dev": {
+		"phpunit/phpunit": "*"
+	},
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Raimondas Rimkevicius",
+			"email": "mekdrop@impresscms.org"
+		}
+	],
+	"require": {
+		"kriswallsmith/assetic": "^1.4",
+		"leafo/lessphp": "^0.5.0",
+		"leafo/scssphp": "^0.7.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"IPFLibraries\\PublicAssetsManager\\": "src/"
+		}
+	}
+}
