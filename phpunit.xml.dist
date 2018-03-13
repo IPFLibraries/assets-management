@@ -2,7 +2,7 @@
 
 <phpunit bootstrap="vendor/autoload.php" colors="true">
 	<testsuites>
-		<testsuite name="Properties Test suite">
+		<testsuite name="Main Test suite">
 			<directory>tests/</directory>
 		</testsuite>
 	</testsuites>
