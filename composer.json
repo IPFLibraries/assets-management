@@ -13,13 +13,30 @@
 		}
 	],
 	"require": {
-		"kriswallsmith/assetic": "^1.4",
-		"leafo/lessphp": "^0.5.0",
-		"leafo/scssphp": "^0.7.5"
+		"mouf/nodejs-installer": "^1.0",
+		"foxy/foxy": ">=1.0.2"
 	},
 	"autoload": {
 		"psr-4": {
 			"IPFLibraries\\PublicAssetsManager\\": "src/"
+		}
+	},
+	"extra": {
+		"mouf": {
+			"nodejs": {
+				"targetDir": "vendor/nodejs/nodejs",
+				"forceLocal": true,
+				"includeBinInPath": false
+			}
+		}
+	},
+	"config": {
+		"foxy": {
+			"enabled": false,
+			"manager": "npm",
+			"manager-bin": "vendor/mouf/nodejs-installer/bin/local/npm",
+			"manager-timeout": 420,
+			"run-asset-manager": true
 		}
 	}
 }
